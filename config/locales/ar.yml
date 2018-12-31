@@ -1,0 +1,1368 @@
+ar:
+  activerecord:
+    attributes:
+      spree/address:
+        address1: عنوان ١
+        address2: عنوان ٢
+        city: المدينة
+        country: البلد
+        firstname: الاسم الاول
+        lastname: الاسم الاخير
+        phone: الهاتف
+        state: 
+        zipcode: الرمز البريدي
+      spree/calculator/tiered_flat_rate:
+        preferred_base_amount:
+        preferred_tiers:
+      spree/calculator/tiered_percent:
+        preferred_base_percent:
+        preferred_tiers:
+      spree/country:
+        iso: 
+        iso3:
+        iso_name: 
+        name: 
+        numcode:
+      spree/credit_card:
+        base:
+        cc_type: 
+        month: شهر
+        name: الإسم
+        number: الرقم
+        verification_value: كود التحقق 
+        year: سنة
+      spree/inventory_unit:
+        state: 
+      spree/line_item:
+        price: السعر
+        quantity: الكمية
+      spree/option_type:
+        name: الإسم
+        presentation: العرض
+      spree/order:
+        checkout_complete: 
+        completed_at: إكتمل في
+        considered_risky: 
+        coupon_code: كوبون خصم
+        created_at: أنشئ في
+        email: البريد الإلكتروني
+        ip_address: 
+        item_total: مجموع العناصر
+        number: رقم
+        payment_state: حالة الدفع
+        shipment_state: حالة الشحنة
+        special_instructions: تعليمات خاصة
+        state: الحالة
+        total: الملبغ الإجمالي
+      spree/order/bill_address:
+        address1: عنوان ١
+        city: مدينة
+        firstname: الإسم الأول
+        lastname: الإسم الأخير
+        phone: الهاتف
+        state: 
+        zipcode: الرمز البريدي
+      spree/order/ship_address:
+        address1: عنوان ١
+        city: مدينة
+        firstname: الإسم الأول
+        lastname: الإسم الأخير
+        phone: الهاتف
+        state: 
+        zipcode: الرمز البريدي
+      spree/payment:
+        amount: المبلغ
+      spree/payment_method:
+        name: الإسم
+      spree/product:
+        available_on: متاح في
+        cost_currency: لغة التكلفة
+        cost_price: سعر التكلفة
+        description: الوصف
+        master_price: السعر الرئيسي
+        name: الإسم
+        on_hand: في اليد
+        shipping_category: 
+        tax_category: 
+      spree/promotion:
+        advertise: أعلن
+        code: الكود
+        description: الوصف
+        event_name: اسم الحدث
+        expires_at: ينتهي في
+        name: الاسم
+        path: 
+        starts_at: يبدأ في
+        usage_limit: حد الإستخدام
+      spree/promotion_category:
+        name: الإسم
+      spree/property:
+        name: الإسم
+        presentation: 
+      spree/prototype:
+        name: الإسم
+      spree/return_authorization:
+        amount: المبلغ
+      spree/role:
+        name: الإسم
+      spree/state:
+        abbr: الإختصار
+        name: الإسم
+      spree/state_change:
+        state_changes:
+        state_from:
+        state_to:
+        timestamp:
+        type:
+        updated:
+        user:
+      spree/store:
+        mail_from_address:
+        meta_description:
+        meta_keywords:
+        name: الإسم
+        seo_title:
+        url:
+      spree/tax_category:
+        description: الوصف
+        name: الإسم
+      spree/tax_rate:
+        amount: المبلغ
+        included_in_price: 
+        show_rate_in_label: 
+      spree/taxon:
+        name: الإسم
+        permalink: 
+        position: 
+      spree/taxonomy:
+        name: الإسم
+      spree/user:
+        email: البريد الإلكتروني
+        password: كلمة المرور
+        password_confirmation: تأكيد كلمة المرور
+      spree/variant:
+        cost_currency: عملة التكلفة
+        cost_price: سعر التكلفة
+        depth: العمق
+        height: الإرتفاع
+        price: السعر
+        sku:
+        weight: الوزن
+        width: العرض
+      spree/zone:
+        description: الوصف
+        name: الإسم
+    errors:
+      models:
+        spree/calculator/tiered_flat_rate:
+          attributes:
+            base:
+              keys_should_be_positive_number:
+            preferred_tiers:
+              should_be_hash:
+        spree/calculator/tiered_percent:
+          attributes:
+            base:
+              keys_should_be_positive_number:
+              values_should_be_percent:
+            preferred_tiers:
+              should_be_hash:
+        spree/classification:
+          attributes:
+            taxon_id:
+              already_linked:
+        spree/credit_card:
+          attributes:
+            base:
+              card_expired: الكارت منتهي الصلاحية
+              expiry_invalid:
+        spree/line_item:
+          attributes:
+            currency:
+              must_match_order_currency:
+        spree/refund:
+          attributes:
+            amount:
+              greater_than_allowed:
+        spree/reimbursement:
+          attributes:
+            base:
+              return_items_order_id_does_not_match:
+        spree/return_item:
+          attributes:
+            inventory_unit:
+              other_completed_return_item_exists:
+            reimbursement:
+              cannot_be_associated_unless_accepted:
+        spree/store:
+          attributes:
+            base:
+              cannot_destroy_default_store:
+    models:
+      spree/address:
+        one: عنوان
+        other: عناوين
+      spree/country:
+        one: بلد
+        other: بلاد
+      spree/credit_card:
+        one: بطاقة الائتمان
+        other: بطاقات الائتمان
+      spree/customer_return:
+      spree/inventory_unit:
+        one: 
+        other: 
+      spree/line_item:
+        one: 
+        other: 
+      spree/option_type:
+        one: 
+        other: 
+      spree/option_value:
+      spree/order:
+        one: طلب
+        other: طلبات
+      spree/payment:
+        one: 
+        other: 
+      spree/payment_method:
+        one: طريقة دفع
+        other: طرق دفع
+      spree/product:
+        one: منتج
+        other: منتجات
+      spree/promotion:
+        one:
+        other:
+      spree/promotion_category:
+        one: 
+        other: 
+      spree/property:
+        one: 
+        other: 
+      spree/prototype:
+        one: 
+        other: 
+      spree/refund_reason:
+      spree/reimbursement:
+      spree/reimbursement_type:
+      spree/return_authorization:
+        one: 
+        other: 
+      spree/return_authorization_reason:
+      spree/role:
+        one: 
+        other: 
+      spree/shipment:
+        one: شحنة
+        other: شحنات
+      spree/shipping_category:
+        one: 
+        other: 
+      spree/shipping_method:
+        one: طريقة شحن
+        other: طرق شحن
+      spree/state:
+        one: 
+        other: 
+      spree/state_change:
+      spree/stock_location:
+        one: 
+        other: 
+      spree/stock_movement:
+      spree/stock_transfer:
+        one: 
+        other: 
+      spree/tax_category:
+        one: 
+        other: 
+      spree/tax_rate:
+        one: 
+        other: 
+      spree/taxon:
+        one: تصنيف
+        other: تصنيفات
+      spree/taxonomy:
+        one: تصنيف
+        other: تصنيفات
+      spree/tracker:
+        one: 
+        other: 
+      spree/user:
+        one: مستخدم
+        other: مستخدمين
+      spree/variant:
+        one: 
+        other: 
+      spree/zone:
+        one: منطقة
+        other: مناطق
+  devise:
+    confirmations:
+      confirmed: 
+      send_instructions:
+    failure:
+      inactive: 
+      invalid: 
+      invalid_token: 
+      locked: 
+      timeout: 
+      unauthenticated: 
+      unconfirmed: 
+    mailer:
+      confirmation_instructions:
+        subject: 
+      reset_password_instructions:
+        subject: 
+      unlock_instructions:
+        subject: 
+    oauth_callbacks:
+      failure: ""
+      success: ""
+    unlocks:
+      send_instructions: 
+      unlocked: 
+    user_passwords:
+      user:
+        cannot_be_blank: 
+        send_instructions: 
+        updated: 
+    user_registrations:
+      destroyed:
+      inactive_signed_up: 
+      updated: 
+    user_sessions:
+      signed_in: تسجيل الدخول
+      signed_out: تسجيل الخروج
+  errors:
+    messages:
+      already_confirmed: 
+      not_found:
+      not_locked:
+      not_saved:
+        one: 
+        other:
+  spree:
+    abbreviation: الإختصار
+    accept:
+    acceptance_errors:
+    acceptance_status:
+    accepted:
+    account: 
+    account_updated: 
+    action: 
+    actions:
+      cancel: ألغي
+      continue: أكمل
+      create: أنشئ
+      destroy: 
+      edit: عدل
+      list: 
+      listing: 
+      new: جديد
+      refund: 
+      save: حفظ
+      update: تعديل
+    activate: فعِل
+    active: نشط
+    add: أضف
+    add_action_of_type:
+    add_country: 
+    add_coupon_code:
+    add_new_header: 
+    add_new_style: 
+    add_one: 
+    add_option_value: 
+    add_product: 
+    add_product_properties: 
+    add_rule_of_type: 
+    add_state: 
+    add_stock: 
+    add_stock_management: 
+    add_to_cart:
+    add_variant:
+    additional_item: 
+    address1: عنوان ١
+    address2: عنوان ٢
+    adjustable:
+    adjustment: 
+    adjustment_amount: المبلغ
+    adjustment_successfully_closed: 
+    adjustment_successfully_opened: 
+    adjustment_total: 
+    adjustments:
+    admin:
+      tab:
+        configuration: الإعدادات
+        option_types: 
+        orders: الطلبات
+        overview: 
+        products: المنتجات
+        promotions: العروض
+        promotion_categories: 
+        properties: 
+        prototypes: 
+        reports: 
+        taxonomies: التصنيفات
+        taxons: التصنيفات
+        users: المستخدمين
+      user:
+        account:
+        addresses:
+        items:
+        items_purchased:
+        order_history:
+        order_num:
+        orders:
+        user_information:
+    administration: 
+    advertise:
+    agree_to_privacy_policy: 
+    agree_to_terms_of_service: 
+    all: 
+    all_adjustments_closed: 
+    all_adjustments_opened: 
+    all_departments: 
+    all_items_have_been_returned:
+    allow_ssl_in_development_and_test: 
+    allow_ssl_in_production: 
+    allow_ssl_in_staging: 
+    already_signed_up_for_analytics: 
+    alt_text: نص بديل
+    alternative_phone: هاتف بديل
+    amount: المبلغ
+    analytics_desc_header_1: 
+    analytics_desc_header_2: 
+    analytics_desc_list_1: 
+    analytics_desc_list_2: 
+    analytics_desc_list_3: 
+    analytics_desc_list_4: 
+    analytics_trackers: 
+    and: و
+    approve: وافق
+    approved_at: تم الموافقة عليه في
+    approver: الموافق
+    are_you_sure: هل أنت متأكد ؟
+    are_you_sure_delete: هل أنت متأكد من الحذف ؟
+    associated_adjustment_closed: 
+    at_symbol: "*"
+    authorization_failure: 
+    authorized: 
+    auto_capture:
+    available_on: متاح في
+    average_order_value: متوسط قيمة الطلب
+    avs_response:
+    back: 
+    back_end: 
+    back_to_payment:
+    back_to_resource_list:
+    back_to_rma_reason_list:
+    back_to_store: الرجوع للمتجر
+    back_to_users_list: الرجوع لقائمة المستخدمين
+    backorderable: 
+    backorderable_default:
+    backordered: 
+    backorders_allowed: 
+    balance_due: 
+    base_amount:
+    base_percent:
+    bill_address: عنوان الدفع
+    billing: الدفع
+    billing_address: عنوان الدفع
+    both: 
+    calculated_reimbursements:
+    calculator: 
+    calculator_settings_warning: 
+    cancel: ألغي
+    canceled_at: ملغى في
+    canceler: 
+    cannot_create_customer_returns:
+    cannot_create_payment_without_payment_methods: 
+    cannot_create_returns: 
+    cannot_perform_operation: 
+    cannot_set_shipping_method_without_address: 
+    capture: 
+    capture_events:
+    card_code: كود الكارت
+    card_number: رقم الكارت
+    card_type: نوع الكارت
+    card_type_is: 
+    cart: سلة التسوق
+    cart_subtotal: 
+    categories: الأقسام
+    category: القسم
+    charged:
+    check_for_spree_alerts:
+    checkout: الدفع
+    choose_a_customer: إختر عميل
+    choose_a_taxon_to_sort_products_for:
+    choose_currency: إختر عملة
+    choose_dashboard_locale: 
+    choose_location:
+    city: مدينة
+    clear_cache:
+    clear_cache_ok:
+    clear_cache_warning:
+    click_and_drag_on_the_products_to_sort_them:
+    clone: 
+    close: أغلق
+    close_all_adjustments: 
+    code: كود
+    company: شركة
+    complete: 
+    configuration: إعداد
+    configurations: إعدادات
+    confirm: تأكيد
+    confirm_delete: تأكيد الحذف
+    confirm_password: تأكيد كلمة المرور
+    continue: 
+    continue_shopping: متابعة التسوق
+    cost_currency: عملة التكلفة
+    cost_price: سعر التكلفة
+    could_not_connect_to_jirafe: 
+    could_not_create_customer_return:
+    could_not_create_stock_movement: 
+    count_on_hand: 
+    countries: الدول
+    country: الدولة
+    country_based: 
+    country_name: اسم الدولة
+    country_names:
+      CA:
+      FRA:
+      ITA:
+      US:
+    coupon: كوبون
+    coupon_code: كود الكوبون
+    coupon_code_already_applied: الكوبون تم تطبيقه بالفعل.
+    coupon_code_applied: الكوبون تم تطبيقه.
+    coupon_code_better_exists: الكوبون السابق يوفر خصم أفضل.
+    coupon_code_expired: الكوبون منتهي الصلاحية.
+    coupon_code_max_usage: وصل الكوبون للحد الأقصى للإستخدام.
+    coupon_code_not_eligible: هذا الكوبون غير متاح للطلب الحالي.
+    coupon_code_not_found: كوبون غير موجود.
+    coupon_code_unknown_error:
+    create: أنشئ
+    create_a_new_account: أنشئ حساب جديد
+    create_new_order: أنشئ طلب جديد
+    create_reimbursement:
+    created_at: أُنشئ في
+    credit: 
+    credit_card: بطاقة إئتمان
+    credit_cards: بطاقات إئتمان
+    credit_owed: 
+    credits:
+    currency: العملة
+    currency_decimal_mark:
+    currency_settings: 
+    currency_symbol_position: 
+    currency_thousands_separator: 
+    current: 
+    current_promotion_usage: 'استخدام العرض الحالي: %{count}'
+    customer: العميل
+    customer_details: تفاصيل العميل
+    customer_details_updated: تم تحديث تفاصيل العميل
+    customer_return:
+    customer_returns: 
+    customer_search: 
+    cut: 
+    cvv_response:
+    dash:
+      jirafe:
+        app_id:
+        app_token: 
+        currently_unavailable: 
+        explanation: 
+        header: 
+        site_id: 
+        token: 
+      jirafe_settings_updated:
+    date: التاريخ
+    date_completed: تاريخ الطلب
+    date_picker:
+      first_day: 0
+      format: "%d.%m.%Y"
+      js_format: dd.mm.yy
+    date_range: 
+    default: الإفتراضي
+    default_refund_amount:
+    default_tax: النص الإفتراضي
+    default_tax_zone: 
+    delete: حذف
+    deleted_variants_present:
+    delivery: توصيل
+    depth: العمق
+    description: الوصف
+    destination: جهة الوصول
+    destroy: حذف
+    details: التفاصيل
+    discount_amount: مبلغ الخصم
+    dismiss_banner: 
+    display: 
+    display_currency: 
+    doesnt_track_inventory:
+    edit: 
+    editing_resource:
+    editing_rma_reason:
+    editing_user: 
+    eligibility_errors:
+      messages:
+        has_excluded_product:
+        item_total_less_than:
+        item_total_less_than_or_equal:
+        item_total_more_than:
+        item_total_more_than_or_equal:
+        limit_once_per_user:
+        missing_product:
+        missing_taxon:
+        no_applicable_products:
+        no_matching_taxons:
+        no_user_or_email_specified:
+        no_user_specified:
+        not_first_order:
+    email: البريد الإلكتروني
+    empty: فارغ
+    empty_cart: سلة المشتريات فارغة
+    enable_mail_delivery: 
+    end: 
+    ending_in: 
+    environment: 
+    error: 
+    errors:
+      messages:
+        could_not_create_taxon: 
+        no_payment_methods_available: 
+        no_shipping_methods_available: 
+    errors_prohibited_this_record_from_being_saved:
+      one: 
+      other:
+    event: 
+    events:
+      spree:
+        cart:
+          add: أضف للسلة
+        checkout:
+          coupon_code_added: تم إضافة الكوبون
+        content:
+          visited: 
+        order:
+          contents_changed: 
+        page_view: 
+        user:
+          signup: 
+    exceptions:
+      count_on_hand_setter: 
+    exchange_for:
+    excl:
+    existing_shipments:
+    expedited_exchanges_warning:
+    expiration: 
+    extension: 
+    failed_payment_attempts:
+    filename: 
+    fill_in_customer_info:
+    filter: 
+    filter_results:
+    finalize: 
+    finalized:
+    find_a_taxon:
+    first_item:
+    first_name: 
+    first_name_begins_with:
+    flat_percent: 
+    flat_rate_per_order: 
+    flexible_rate: 
+    forgot_password: 
+    free_shipping: شحن مجاني
+    free_shipping_amount:
+    front_end: 
+    gateway: 
+    gateway_config_unavailable: 
+    gateway_error: 
+    general: 
+    general_settings: 
+    google_analytics: 
+    google_analytics_id: 
+    guest_checkout: 
+    guest_user_account: 
+    has_no_shipped_units: 
+    height: الإرتفاع
+    hide_cents: 
+    home: 
+    i18n:
+      available_locales: اللغات المتاحة
+      fields: الحقول
+      language: اللغة
+      localization_settings: اعدادات اللغات
+      only_complete: الكاملة فقط
+      only_incomplete: الغير كاملة فقط
+      select_locale: اختر لغة
+      show_only: اعرض فقط
+      supported_locales: عربي
+      this_file_language: Arabic
+      translations: الترجمات
+      locales_displayed_on_frontend_select_box: العربية
+    Icon: أيقونة
+    identifier:
+    image: صورة
+    images: صور
+    implement_eligible_for_return:
+    implement_requires_manual_intervention:
+    inactive:
+    incl: 
+    included_in_price: مشمولة في السعر
+    included_price_validation: 
+    incomplete:
+    info_number_of_skus_not_shown:
+    info_product_has_multiple_skus:
+    instructions_to_reset_password: 
+    insufficient_stock:
+    insufficient_stock_lines_present:
+    intercept_email_address: 
+    intercept_email_instructions: 
+    internal_name: 
+    invalid_credit_card:
+    invalid_exchange_variant:
+    invalid_payment_provider: 
+    invalid_promotion_action: 
+    invalid_promotion_rule: 
+    inventory: 
+    inventory_adjustment: 
+    inventory_error_flash_for_insufficient_quantity: 
+    inventory_state:
+    is_not_available_to_shipment_address: 
+    iso_name: 
+    item: 
+    item_description: 
+    item_total: 
+    item_total_rule:
+      operators:
+        gt: 
+        gte: 
+        lt:
+        lte:
+    items_cannot_be_shipped: 
+    items_in_rmas:
+    items_reimbursed:
+    items_to_be_reimbursed:
+    jirafe: 
+    landing_page_rule:
+      path: 
+    last_name: 
+    last_name_begins_with: 
+    learn_more: 
+    lifetime_stats:
+    line_item_adjustments:
+    list: 
+    loading: 
+    locale_changed:
+    location: 
+    lock: 
+    log_entries:
+    logged_in_as: 
+    logged_in_succesfully: 
+    logged_out: 
+    login: 
+    login_as_existing: 
+    login_failed: 
+    login_name: 
+    logout:
+    logs:
+    look_for_similar_items:
+    make_refund: 
+    make_sure_the_above_reimbursement_amount_is_correct:
+    manage_promotion_categories:
+    manage_variants:
+    manual_intervention_required:
+    master_price: 
+    match_choices:
+      all: 
+      none:
+    max_items: 
+    member_since:
+    memo:
+    meta_description:
+    meta_keywords:
+    meta_title:
+    metadata: 
+    minimal_amount: 
+    month: 
+    more: 
+    move_stock_between_locations: 
+    my_account: حسابي
+    my_orders: طلباتي
+    name: الإسم
+    name_on_card:
+    name_or_sku:
+    new: جديد
+    new_adjustment: 
+    new_country: بلد جديد
+    new_customer: مستخدم جديد
+    new_customer_return:
+    new_image: صورة جديدة
+    new_option_type: 
+    new_order: طلب جديد
+    new_order_completed: 
+    new_payment:
+    new_payment_method: طريقة دفع جديدة
+    new_product: منتج جديد
+    new_promotion: عرض جديد
+    new_promotion_category:
+    new_property: 
+    new_prototype: 
+    new_refund:
+    new_refund_reason:
+    new_return_authorization: Uusi asiakaspalautus
+    new_rma_reason:
+    new_shipment_at_location:
+    new_shipping_category: Uusi toimituskategoria
+    new_shipping_method: Uusi toimitustapa
+    new_state: Uusi osavaltio
+    new_stock_location: Uusi varasto
+    new_stock_movement: Uusi varastosiirto
+    new_stock_transfer: Uusi varastosiirto
+    new_tax_category: Uusi verotuskategoria
+    new_tax_rate: Uusi veroprosentti
+    new_taxon: Uusi taksoni
+    new_taxonomy: Uusi taksonomia
+    new_tracker: Uusi jäljitin
+    new_user: Uusi käyttäjä
+    new_variant: Uusi variantti
+    new_zone: Uusi alue
+    next: Seuraava
+    no_actions_added: Toimintoja ei lisätty
+    no_payment_found: Virhe. Maksua ei löytynyt.
+    no_pending_payments: Ei maksuja odottamassa
+    no_products_found: Ei löytynyt tuotteita
+    no_resource_found: Kohdetta %{resource} ei löytynyt
+    no_results: Ei tuloksia
+    no_returns_found:
+    no_rules_added: Sääntöjä ei lisätty
+    no_shipping_method_selected:
+    no_state_changes:
+    no_tracking_present: Seurantatietoja ei ole annettu.
+    none: Ei yhtäkään
+    none_selected:
+    normal_amount: Normaali määrä
+    not: ei
+    not_available: N/A
+    not_enough_stock: Varastossa josta tuotteet pitäisi lähettää ei ole tarpeeksi montaa tuotetta siirron suorittamiseksi.
+    not_found: "%{resource} ei löytynyt"
+    note:
+    notice_messages:
+      product_cloned: Tuote kloonattu
+      product_deleted: Tuote poistettu
+      product_not_cloned: Tuotetta ei voitu kloonata
+      product_not_deleted: Tuotetta ei voitu poistaa
+      variant_deleted: Variantti poistettu
+      variant_not_deleted: Varianttia ei voitu poistaa
+    num_orders:
+    on_hand: Saatavilla
+    open: Avaa
+    open_all_adjustments: Avaa kaikki hintamuutokset
+    option_type: Valintatyyppi
+    option_type_placeholder: Valitse valintatyyppi
+    option_types: Valintatyypit
+    option_value: Valinta-arvo
+    option_values: Valinta-arvot
+    optional: Vapaaehtoinen
+    options: Valinnat
+    or: tai
+    or_over_price: "%{price} or over"
+    order: Tilaus
+    order_adjustments: Tilauksen hintamuutokset
+    order_already_updated:
+    order_approved:
+    order_canceled:
+    order_details: Tilauksen tiedot
+    order_email_resent: Tilausviesti uudelleenlähetetty
+    order_information: معلومات الطلب
+    order_mailer:
+      cancel_email:
+        dear_customer: عزيزي العميل,
+        instructions: من فضلك قم بمراجعة وحفظ معلومات طلبك.
+        order_summary_canceled: ملخص الطلب [ملغي]
+        subject: طلب ملغي
+        subtotal: المجموع الجزئي
+        total: المجموع الكلي
+      confirm_email:
+        dear_customer: عزيزي العميل,
+        instructions: من فضلك قم بمراجعة وحفظ معلومات طلبك.
+        order_summary: ملخص الطلب
+        subject: تأكيد الطلب
+        subtotal: المجموع الجزئي
+        thanks: شكراً لتسوقك معنا
+        total: المجموع الكلي
+    order_not_found: Tilaustasi ei löytynyt näillä tiedoilla. Yritä ystävällisesti uudelleen.
+    order_number: طلب رقم %{number}
+    order_populator:
+      out_of_stock: "%{item} on loppunut varastosta."
+      please_enter_reasonable_quantity: Anna joku kohtuullinen määrä.
+      selected_quantity_not_available: Valittua määrää ei ole saatavilla
+    order_processed_successfully: Tilauksenne käsitelty onnistuneesti
+    order_resumed:
+    order_state:
+      address: osoite
+      awaiting_return: odottaa palautusta
+      canceled: ملغي
+      cart: ostoskori
+      complete: مكتمل
+      confirm: vahvista
+      considered_risky:
+      delivery: toimitus
+      payment: maksu
+      resumed: resumed
+      returned: palautettu
+    order_summary: ملخص الطلب
+    order_sure_want_to: Haluatko varmasti %{event} tämän tilauksen?
+    order_total: الملبغ الكلي
+    order_updated: Tilaus päivitetty
+    orders: Tilaukset
+    other_items_in_other:
+    out_of_stock: Ei saatavilla
+    overview: Yleiskuva
+    package_from: lähetys varastosta
+    pagination:
+      next_page: seruaava sivu »
+      previous_page: "« edellinen sivu"
+      truncate: "…"
+    password: Salasana
+    paste: Paste
+    path: Polku
+    pay: maksa
+    payment: Maksu
+    payment_could_not_be_created:
+    payment_identifier:
+    payment_information: Maksun tiedot
+    payment_method: Maksutapa
+    payment_method_not_supported: Tätä maksutapaa ei voida hyväksyä. Valitse joku toinen maksutapa.
+    payment_methods: Maksutavat
+    payment_processing_failed: Maksua ei voitu käsitellä, ole hyvä ja tarkista antamasi tiedot
+    payment_processor_choose_banner_text: Mikäli tarvitset apua maksuvaihtoehdon valitsemisessa, vieraile
+    payment_processor_choose_link: maksusivullamme.
+    payment_state: حالة الدفع
+    payment_states:
+      balance_due: osa maksamatta
+      checkout: tilattu
+      completed: مكتمل
+      credit_owed: مدين بمبلغ
+      failed: فشل
+      paid: مدفوع
+      pending: معلق
+      processing: جاري المعالجة
+      void: باطل
+    payment_updated: Maksu päivitetty
+    payments: المدفعوات
+    pending:
+    percent: Prosentti
+    percent_per_item: Prosenttia per rivi
+    permalink: Permalink
+    phone: Puhelin
+    place_order: Tee tilaus
+    please_define_payment_methods: Ole hyvä ja määrittele ensin joitakin maksutapoja.
+    populate_get_error: Jokin meni pieleen. Ole hyvä ja yritä lisätä tuotetta uudelleen.
+    powered_by: Palvelun tarjoaa
+    pre_tax_amount:
+    pre_tax_refund_amount:
+    pre_tax_total:
+    preferred_reimbursement_type:
+    presentation: Esitys
+    previous: Edellinen
+    previous_state_missing:
+    price: السعر
+    price_range: Price Range
+    price_sack: Price Sack
+    process: Prosessi
+    product: Tuote
+    product_details: Tuotetiedot
+    product_has_no_description: Tuotteella ei tuotekuvausta
+    product_not_available_in_this_currency: Tämä tuote ei ole saatavissa valitsemallasi valuutalla.
+    product_properties: Tuotteen ominaisuudet
+    product_rule:
+      choose_products: Valitse tuotteet
+      label: Tilauksen tulee sisältää x määrä näitä tuotteita
+      match_all: kaikki
+      match_any: ainakin yksi
+      match_none: ei yhtään
+      product_source:
+        group: Tuoteryhmästä
+        manual: Valitse
+    products: Tuotteet
+    promotion: Kampanja
+    promotion_action: Kampanjatoiminto
+    promotion_action_types:
+      create_adjustment:
+        description: Luo tilaukselle hintamuutoksen kampanjan avulla
+        name: Uusi tilauskohtainen hintamuutos
+      create_item_adjustments:
+        description: Luo tilausriville hintamuutos kampanjan avulla
+        name: Uusi rivikohtainen hintamuutos
+      create_line_items:
+        description: Lisää ostoskoriin variantteja
+        name: Lisää tuote
+      free_shipping:
+        description: Kaikki toimitukset tilaukselle ovat ilmaisia
+        name: Ilmainen toimitus
+    promotion_actions: 
+    promotion_categories: 
+    promotion_form:
+      match_policies:
+        all: 
+        any:
+    promotion_label: 'عرض (%{name})'
+    promotion_rule: 
+    promotion_rule_types:
+      first_order:
+        description: Täytyy olla asiakkaan ensimmäinen tilaus
+        name: Ensimmäinen tilaus
+      item_total:
+        description: Tilaus täyttää nämä kriteerit
+        name: Tilaus yhteensä
+      landing_page:
+        description: Asiakkaan on täytynyt vierailla tietyllä sivulla
+        name: Landing Page
+      one_use_per_user:
+        description: Käyttäjäkohtainen kerta-alennus
+        name: Käyttäjäkohtainen kerta-alennus
+      option_value:
+        description: Tilaus sisältää tietyn tuotteen valintatyypillä
+        name: Valintatyyppi
+      product:
+        description: Tilaus sisältää määritellyt tuotteet
+        name: Tuotteet
+      taxon:
+        description: Tilaus sisältää tuotteen tietystä taxonista
+        name: Taxonit
+      user:
+        description: Saatavilla vain määritellyille käyttäjille
+        name: Käyttäjä
+      user_logged_in:
+        description: Vain sisäänkirjautuneille käyttäjille
+        name: Käyttäjä on kirjautunut
+    promotion_uses:
+    promotionable:
+    promotions: Kampanjat
+    propagate_all_variants:
+    properties: Ominaisuudet
+    property: Ominaisuus
+    prototype: Prototyyppi
+    prototypes: Prototyypit
+    provider: Tarjoaja
+    provider_settings_warning: Jos muutat tarjoajan tyyppiä, sinun täytyy tallentaa ennen kuin voit muuttaa tarjoajan asetuksia
+    qty: الكمية
+    quantity: الكمية
+    quantity_returned: Palautettu määrä
+    quantity_shipped: Toimitettu määrä
+    quick_search: Pikahaku
+    rate: Taso
+    reason: Syy
+    receive: vastaanota
+    receive_stock: Varastoon
+    received: Vastaanotettu
+    reception_status:
+    reference: Viite
+    refund: Hyvitä
+    refund_amount_must_be_greater_than_zero:
+    refund_reasons:
+    refunded_amount:
+    refunds:
+    register: Rekisteröidy uutena käyttäjänä
+    registration: Rekisteröityminen
+    reimburse:
+    reimbursed:
+    reimbursement:
+    reimbursement_mailer:
+      reimbursement_email:
+        days_to_send:
+        dear_customer:
+        exchange_summary:
+        for:
+        instructions:
+        refund_summary:
+        subject:
+        total_refunded:
+    reimbursement_perform_failed:
+    reimbursement_status:
+    reimbursement_type:
+    reimbursement_type_override:
+    reimbursement_types:
+    reimbursements:
+    reject:
+    rejected:
+    remember_me: تذكرني
+    remove: حذف
+    rename: إعادة تسمية
+    report: تقرير
+    reports: تقارير
+    resend: إعادة إرسال
+    reset_password: إعادة تعيين كلمة المرور
+    response_code: 
+    resume: 
+    resumed: 
+    return: 
+    return_authorization: 
+    return_authorization_reasons:
+    return_authorization_updated: 
+    return_authorizations: 
+    return_item_inventory_unit_ineligible:
+    return_item_inventory_unit_reimbursed:
+    return_item_rma_ineligible:
+    return_item_time_period_ineligible:
+    return_items:
+    return_items_cannot_be_associated_with_multiple_orders:
+    return_number:
+    return_quantity: 
+    returned: مرتجع
+    returns: مرتجعات
+    review: مراجعة
+    risk:
+    risk_analysis:
+    risky:
+    rma_credit: 
+    rma_number: 
+    rma_value: 
+    roles: 
+    rules:
+    safe:
+    sales_total: 
+    sales_total_description: 
+    sales_totals: Myynti yhteensä
+    save_and_continue: الحفظ والإستمرار
+    save_my_address: حفظ عنواني
+    say_no: Ei
+    say_yes: Kyllä
+    scope: Laajuus
+    search: Etsi
+    search_results: 'Etsi tuloksia avainsanoilla: %{keywords}'
+    searching: 
+    secure_connection_type: Turvallinen yhteystyyppi
+    security_settings: Turvallisuusasetukset
+    select: Valitse
+    select_a_return_authorization_reason:
+    select_a_stock_location:
+    select_from_prototype: Valitse prototyypistä
+    select_stock: Valitse varasto
+    selected_quantity_not_available: 'valitulle tuotteelle %{item} ei ole saatavissa'
+    send_copy_of_all_mails_to: Lähetä kopio kaikista sähköposteista
+    send_mails_as: Lähetä sähköpostiviestit
+    server: خادم
+    server_error: خطأ بالخادم
+    settings: الإعدادات
+    ship: toimita
+    ship_address: عنوان الشحن
+    ship_total: Toimitus yhteensä
+    shipment: Toimitus
+    shipment_adjustments:
+    shipment_details: "%{stock_location} %{shipping_method}"
+    shipment_mailer:
+      shipped_email:
+        dear_customer: عملينا العزيز
+        instructions: 
+        shipment_summary: 
+        subject: 
+        thanks: 
+        track_information: 'Seurantatiedot: %{tracking}'
+        track_link: 'Seurantalinkki: %{url}'
+    shipment_state: حالة الشحنة
+    shipment_states:
+      backorder: يتم تجهزيه
+      canceled: ملغى
+      partial: جزئي
+      pending: قيد التنفيذ
+      ready: جاهز
+      shipped: تم شحنه
+    shipment_transfer_error:
+    shipment_transfer_success:
+    shipments: الشحنات
+    shipped: تم شحنه
+    shipping: تكلفة الشحن
+    shipping_address: عنوان الشحن
+    shipping_categories: 
+    shipping_category: 
+    shipping_flat_rate_per_item: 
+    shipping_flat_rate_per_order: 
+    shipping_flexible_rate: 
+    shipping_instructions: إرشاذات الشخن
+    shipping_method: طريقة الشحن
+    shipping_methods: طرق الشحن
+    shipping_price_sack: Hintasäkki
+    shipping_total: تكلفة الشحن الكلية
+    shop_by_taxonomy: "%{taxonomy}"
+    shopping_cart: سلة المشتريات
+    show: عرض
+    show_active: عرض النشط
+    show_deleted: عرض المحذوف
+    show_only_complete_orders: عرض الطلبات المكتملة فقط
+    show_only_considered_risky:
+    show_rate_in_label: Näytä vero hinnoissa
+    signup: التسجيل
+    sku: SKU
+    skus:
+    slug:
+    source: Lähde
+    special_instructions: إرشادات خاصة
+    split: Jaa osiin
+    spree_gateway_error_flash_for_checkout: Maksusi tiedoissa oli virhe. Ole hyvä ja tarkista tiedot, ja yritä uudelleen.
+    ssl:
+      change_protocol:
+    start: 
+    state: 
+    state_based:
+    state_machine_states:
+      accepted:
+      address:
+      authorized:
+      awaiting:
+      awaiting_return:
+      backordered: جاري تجهيزه
+      canceled: ملغى
+      cart:
+      checkout:
+      closed:
+      complete:
+      completed:
+      confirm:
+      delivery:
+      errored:
+      failed:
+      given_to_customer:
+      invalid:
+      manual_intervention_required:
+      on_hand:
+      open:
+      order:
+      payment:
+      pending:
+      processing:
+      ready: جاهز
+      reimbursed:
+      resumed:
+      returned:
+      shipped: تم شحنه
+      void:
+    states: 
+    states_required: 
+    status: 
+    stock: 
+    stock_location: 
+    stock_location_info: 
+    stock_locations: 
+    stock_locations_need_a_default_country:
+    stock_management: 
+    stock_management_requires_a_stock_location: 
+    stock_movements: 
+    stock_movements_for_stock_location: 
+    stock_successfully_transferred: 
+    stock_transfer: 
+    stock_transfers: 
+    stop: 
+    store: 
+    street_address: 
+    street_address_2: 
+    subtotal: المبلغ الجزئي
+    subtract: 
+    success:
+    successfully_created: 
+    successfully_refunded:
+    successfully_removed: 
+    successfully_signed_up_for_analytics: 
+    successfully_updated: 
+    summary: 
+    tax: 
+    tax_categories: 
+    tax_category: 
+    tax_code:
+    tax_included:
+    tax_rate_amount_explanation: 
+    tax_rates: 
+    taxon: 
+    taxon_edit: 
+    taxon_placeholder: 
+    taxon_rule:
+      choose_taxons:
+      label:
+      match_all:
+      match_any:
+    taxonomies: 
+    taxonomy: 
+    taxonomy_edit: 
+    taxonomy_tree_error: 
+    taxonomy_tree_instruction: 
+    taxons: 
+    test: 
+    test_mailer:
+      test_email:
+        greeting: 
+        message: 
+        subject: 
+    test_mode: 
+    thank_you_for_your_order: 
+    there_are_no_items_for_this_order: 
+    there_were_problems_with_the_following_fields: 
+    this_order_has_already_received_a_refund:
+    thumbnail: 
+    tiered_flat_rate:
+    tiered_percent:
+    tiers:
+    time: الوقت
+    to_add_variants_you_must_first_define: 
+    total: المبلغ الكلي
+    total_per_item:
+    total_pre_tax_refund:
+    total_price:
+    total_sales:
+    track_inventory: 
+    tracking: 
+    tracking_number: 
+    tracking_url: 
+    tracking_url_placeholder: 
+    transaction_id:
+    transfer_from_location: 
+    transfer_stock: 
+    transfer_to_location: 
+    tree: 
+    type: 
+    type_to_search: Type to search
+    unable_to_connect_to_gateway: Ei saatu yhteyttä yhdyskäytävään
+    unable_to_create_reimbursements:
+    under_price: Under %{price}
+    unlock: Avaa lukitus
+    unrecognized_card_type: Tunnistamaton korttityyppi
+    unshippable_items: Ei lähetettävissä
+    update: 
+    updating: 
+    usage_limit: 
+    use_app_default: Käytä oletusta
+    use_billing_address: Käytä laskutusosoitetta
+    use_new_cc: Käytä uutta korttia
+    use_s3: Käytä Amazon S3:a kuvia varten
+    user: 
+    user_rule:
+      choose_users: 
+    users: المستخدمين
+    validation:
+      cannot_be_less_than_shipped_units: ei voi olla pienempi kuin toimitettu määrä.
+      cannot_destroy_line_item_as_inventory_units_have_shipped:
+      exceeds_available_stock: ylittää nykyisen varastotilanteen. Varmista tuoterivien oikea kappalemäärä.
+      is_too_large: on liian iso -- varastossa ei riittävästi tuotteita
+      must_be_int: täytyy olla kokonaisluku
+      must_be_non_negative: täytyy olla ei-negatiivinen
+      unpaid_amount_not_zero:
+    value: 
+    variant: 
+    variant_placeholder:
+    variants: 
+    version: 
+    void: 
+    weight: 
+    what_is_a_cvv: 
+    what_is_this: 
+    width: 
+    year: 
+    you_have_no_orders_yet: Sinulla ei ole vielä tilauksia.
+    your_cart_is_empty: Ostoskorisi on tyhjä.
+    your_order_is_empty_add_product: Tilauksesi ei sisällä yhtään tuotetta. Lisää tuotteita ensin ostoskoriin.
+    zip: 
+    zipcode: 
+    zone: 
+    zones: 
