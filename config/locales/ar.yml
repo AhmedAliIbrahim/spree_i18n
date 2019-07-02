@@ -146,7 +146,7 @@ ar:
         depth: العمق
         height: الإرتفاع
         price: السعر
-        sku:
+        sku: الباركود
         weight: الوزن
         width: العرض
       spree/zone:
@@ -774,7 +774,7 @@ ar:
     manage_promotion_categories:
     manage_variants:
     manual_intervention_required:
-    master_price: 
+    master_price: السعر الرئيسي
     match_choices:
       all: 
       none:
@@ -834,8 +834,8 @@ ar:
     no_payment_found: Virhe. Maksua ei löytynyt.
     no_pending_payments: Ei maksuja odottamassa
     no_products_found: Ei löytynyt tuotteita
-    no_resource_found: Kohdetta %{resource} ei löytynyt
-    no_results: Ei tuloksia
+    no_resource_found: لا توجد %{resource}
+    no_results: لا توجد نتائج
     no_returns_found:
     no_rules_added: Sääntöjä ei lisätty
     no_shipping_method_selected:
@@ -987,8 +987,8 @@ ar:
       product_source:
         group: Tuoteryhmästä
         manual: Valitse
-    products: Tuotteet
-    promotion: Kampanja
+    products: المنتجات
+    promotion: العروض
     promotion_action: Kampanjatoiminto
     promotion_action_types:
       create_adjustment:
@@ -1053,8 +1053,8 @@ ar:
     quantity: الكمية
     quantity_returned: Palautettu määrä
     quantity_shipped: Toimitettu määrä
-    quick_search: Pikahaku
-    rate: Taso
+    quick_search: بحث سريع
+    rate: تقييم
     reason: Syy
     receive: vastaanota
     receive_stock: Varastoon
@@ -1242,7 +1242,7 @@ ar:
       void:
     states: 
     states_required: 
-    status: 
+    status: الحالة
     stock: 
     stock_location: 
     stock_location_info: 
