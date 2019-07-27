@@ -905,9 +905,9 @@ ar:
       address: osoite
       awaiting_return: odottaa palautusta
       canceled: ملغي
-      cart: ostoskori
+      cart: سلة
       complete: مكتمل
-      confirm: vahvista
+      confirm: تأكيد
       considered_risky:
       delivery: toimitus
       payment: maksu
